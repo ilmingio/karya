@@ -1,0 +1,19 @@
+{
+  "name": "@karya/agent-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@karya/repository-context": "workspace:*",
+    "@karya/session-store": "workspace:*",
+    "@karya/shared-types": "workspace:*",
+    "@karya/tool-execution": "workspace:*",
+    "@karya/verification": "workspace:*"
+  },
+  "devDependencies": {
+    "@karya/provider-adapters": "workspace:*"
+  }
+}

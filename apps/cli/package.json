@@ -1,0 +1,19 @@
+{
+  "name": "@karya/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "karya": "./bin/karya.js"
+  },
+  "exports": {
+    ".": "./src/main.ts"
+  },
+  "dependencies": {
+    "@karya/agent-runtime": "workspace:*",
+    "@karya/provider-adapters": "workspace:*",
+    "@karya/session-store": "workspace:*",
+    "@karya/shared-types": "workspace:*",
+    "tsx": "^4.19.4"
+  }
+}

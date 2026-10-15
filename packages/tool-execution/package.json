@@ -1,0 +1,14 @@
+{
+  "name": "@karya/tool-execution",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@karya/repository-context": "workspace:*",
+    "@karya/shared-types": "workspace:*",
+    "diff": "^7.0.0"
+  }
+}

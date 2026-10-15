@@ -1,0 +1,35 @@
+{
+  "name": "karya",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.26.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "karya": "node apps/cli/bin/karya.js",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint ."
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "devDependencies": {
+    "@karya/agent-runtime": "workspace:*",
+    "@karya/cli": "workspace:*",
+    "@karya/provider-adapters": "workspace:*",
+    "@karya/repository-context": "workspace:*",
+    "@karya/session-store": "workspace:*",
+    "@karya/shared-types": "workspace:*",
+    "@karya/tool-execution": "workspace:*",
+    "@karya/verification": "workspace:*",
+    "@types/node": "^22.15.21",
+    "eslint": "^9.26.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
+    "vitest": "^3.1.3"
+  }
+}

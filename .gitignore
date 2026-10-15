@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.karya/sessions/
+.karya/config.json
+.pnpm-store/
+*.log
+.DS_Store
+.env
+.env.*
